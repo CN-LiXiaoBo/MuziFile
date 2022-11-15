@@ -39,25 +39,25 @@ mvn install:install-file -DgroupId=com.sicnu.muzifile -DartifactId=muzi-file -Dv
 0 - 本地保存
 1 - AliyunOSS保存
 
-```properties
+```xml
 muzifile.storage-type = 0
 ```
 **配置文件夹保存前缀**
 
-```properties
+```xml
 muzifile.bucket-name=muzifile
 ```
 
 **配置文件本地保存路径**
 
-```properties
+```xml
 muzifile.local-storage-path=/muzifile
 ```
 
 
 如果选择**storageType为1(AliyunOSS)** 继续配置
 
-```properties
+```xml
 #阿里云oss基本配置
 muzifile.aliyun.oss.endpoint=
 muzifile.aliyun.oss.access-key=
@@ -68,7 +68,7 @@ muzifile.aliyun.oss.bucket=
 
 **Redis的配置**
 
-```properties
+```xml
 #配置Redis
 spring.redis.host=192.168.56.10
 spring.redis.port=6379
